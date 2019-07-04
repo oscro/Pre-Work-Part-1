@@ -1,42 +1,148 @@
 /* Global resets */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	color: #424242;
-	line-height: 1.4;
+  font-family: 'rooney-sans', Avenir-Book, Calibri, sans-serif;
+  color: #424242;
+  line-height: 1.4;
 }
 
 /* Fonts */
 h1 {
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
-	font-size: 2.5em;
-	font-weight: bold;
+  font-family: 'rooney-web', 'AmericanTypewriter', Rockwell, serif;
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 .container {
-	margin: 2em auto;
-	max-width: 630px;
-	text-align: center;
+  margin: 2em auto;
+  max-width: 630px;
+  text-align: center;
 }
 
-/* The following font information and color codes are provided for you.  They do not match the prototype exactly, but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for future applicants.  Thank you!  Happy coding!
+.topBox {
+  background-color: #464646;
+  color: #d0d0d0;
+  margin: 2em auto;
+  margin-bottom: 0;
+  max-width: 42%;
+  border-radius: 4px;
+  padding: 2%;
+}
 
-	FONTS:
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+.topBoxBold {
+  font-family: 'rooney-web', 'AmericanTypewriter', Rockwell, serif;
+  color: #ffffff;
+}
 
-  COLORS:
-  blue: #20A1D4;
-  green: #1CBC2C;
-  orange: #EF5F3C;
-  black: #424242;
-  grey: #777;
-  light grey: #eaeaea;
-*/
+.arrow-down {
+  width: 0;
+  height: 0;
+  margin-left: 411px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #464646;
+}
 
-/* Your CSS code goes here */
+.secondBox {
+  border-style: solid;
+  border-color: #eaeaea;
+  border-width: thin;
+  margin-top: 2px;
+  margin-left: 181px;
+  width: 266px;
+}
+
+.progressContainer {
+  background-color: #fafafa;
+  margin: 0px 0px 0px 0px;
+  height: 11px;
+  width: 100%;
+  border-bottom-style: solid;
+  border-color: #eaeaea;
+  border-width: thin;
+}
+.progressBar {
+  background-color: #f15e33;
+  color: #f15e33;
+  width: 75%;
+  height: 100%;
+}
+
+.textContainer {
+  text-align: start;
+  padding: 10px 20px 20px 20px;
+  font-size: 13px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+input[type='button'] {
+  font-size: 14px;
+  background-color: #00be1c;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: 'rooney-sans', Avenir-Book, Calibri, sans-serif;
+}
+
+.inputContainer ::-webkit-input-placeholder {
+  font-weight: bold;
+}
+
+.currencyinput {
+  width: 40%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  height: 49px;
+  margin-top: 4px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.currencyinput input {
+  border: 0;
+  width: 75%;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 268px;
+  margin-left: 180px;
+}
+
+.buttonContainer button {
+  background-color: #fafafa;
+  color: #858585;
+  border: 2px solid #eaeaea;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 12px;
+  width: 122px;
+  font-size: 11px;
+}
+
+@media screen and (max-width: 650px) {
+  .arrow-down {
+    margin-left: 310px;
+  }
+}
